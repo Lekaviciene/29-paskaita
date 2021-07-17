@@ -32,7 +32,7 @@
       // 1.5 surasti staciakampio istrizaines ilgi
       var a = 8;
       var b = 6;
-      var staciakampioIstrizaine = ((a*a) + (b*b));
+      var staciakampioIstrizaine = ((a*a) + (b*b)) ;
       console.log(staciakampioIstrizaine);
       
 
@@ -47,12 +47,31 @@
       var Klientas = {
             vardas: "Vardenis",
             pavarde: "Pavardenis",
-            asmensKodas: 123456789,
+            asmensKodas: 0,
             adresas: "Vilnius",
             elpastas: "el.pastas@gmail.com",
-        };
+            
+           
+        }
 
+        var container = document.querySelector(".container");
+        var masyvas = []; //sukuriamas tuscias masyvas viena kart
+        for (var i=0; i < 200; i++) {
+                var masyvoObjektas = {
+                id: i+1,
+                vardas: "Vardenis" + (i+1),
+                pavarde: "Pavardenis" + (i+1),
+                asmensKodas: (i+1),
+                adresas: "Vilnius" + (i+1),
+                elpastas: "el.pastas@gmail.com" + (i+1)
+            }; 
+            
+            console.log(masyvoObjektas);
+            console.log(masyvas);
+        }
 
+        
+        
     
   
 
